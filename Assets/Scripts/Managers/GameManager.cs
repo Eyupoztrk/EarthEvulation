@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     public FLOAT pointAmount;
     public INTEGER increaseAmount;
 
-
-
     private void Awake()
     {
         instance = this;

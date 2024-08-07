@@ -7,7 +7,6 @@ public class Atmosphere : PlanetConditionManager
     public FLOAT AtmosphereValue;
     public GameObject AtmosphereLayer;
 
-
     private void Start()
     {
         AtmosphereValue.Initialize("Atmosphere");

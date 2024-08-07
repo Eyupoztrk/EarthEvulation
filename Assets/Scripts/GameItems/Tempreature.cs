@@ -8,8 +8,6 @@ public class Tempreature : PlanetConditionManager
     public FLOAT TempreatureValue;
     public int suitableMinTemp;
 
-
-
     private void Start()
     {
         TempreatureValue.Initialize("TempreatureValue");

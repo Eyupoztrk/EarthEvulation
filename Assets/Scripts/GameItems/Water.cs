@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Water : PlanetConditionManager
 {
-
     public FLOAT WaterValue;
     public int suitableMinWater;
 

@@ -16,14 +16,10 @@ public class PlayerPoint : MonoBehaviour
     public Element element;
 
     [Header("UI PART")]
-
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] TextMeshProUGUI valueText;
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] TextMeshProUGUI increaseAmountText;
-
-
-
 
 
     private void Start()
@@ -48,8 +44,6 @@ public class PlayerPoint : MonoBehaviour
         }
 
     }
-
-
 
     private void OnEnable()
     {
@@ -87,8 +81,6 @@ public class PlayerPoint : MonoBehaviour
 
         UIManager.instance.SetText(UIManager.instance.increaseText, GameManager.instance.stringFormat.FormatInt(GameManager.instance.point.IncreaseAmount) + " / sn");
     }
-
-
 
     protected virtual void HandleOnReachPoint()
     {

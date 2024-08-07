@@ -23,18 +23,6 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
-
-    public void Deneme()
-    {
-        var isComplete = false;
-        while (!isComplete)
-        {
-            transform.position =  Mechanics.instance.LerpMechanics(transform.position,new Vector3(0, -1, -10), speed, ref isComplete);
-        }
-        
-    }
-
-
     public IEnumerator CamMovement()
     {
         var startTime =0f;

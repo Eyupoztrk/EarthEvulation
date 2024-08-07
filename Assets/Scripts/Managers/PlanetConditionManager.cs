@@ -51,9 +51,6 @@ public abstract class PlanetConditionManager : MonoBehaviour
     {
         isComplete = true;
         SetPlanet();
-        /*  if (!isChange)
-              StartCoroutine(ChangePlanet());
-          isChange = true;*/
     }
 
     private IEnumerator ChangePlanet()

@@ -23,13 +23,10 @@ public class PlanetMovement : MonoBehaviour
         Vector3 deltaMousePosition = GetMousePos();
         float rotationX = deltaMousePosition.y * manuelRotationSpeed * Time.deltaTime;
         float rotationY = -deltaMousePosition.x * manuelRotationSpeed * Time.deltaTime;
-
-        // X ve Y eksenlerinde döndür
         transform.Rotate(Vector3.up, rotationY, Space.World);
         transform.Rotate(Vector3.right, rotationX, Space.World);
 
-        // Fare pozisyonunu güncelle
-         lastMousePosition = Input.mousePosition;
+        lastMousePosition = Input.mousePosition;
 
     }
 
@@ -48,12 +45,12 @@ public class PlanetMovement : MonoBehaviour
     {
         while (true)
         {
-           yield return new WaitUntil(predicate: () =>
-           {
-            return !isDragging;
-           });
+            yield return new WaitUntil(predicate: () =>
+            {
+                return !isDragging;
+            });
 
-          transform.Rotate(Vector3.up * automaticRotationSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up * automaticRotationSpeed * Time.deltaTime);
         }
 
     }

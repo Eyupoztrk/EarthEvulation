@@ -7,8 +7,6 @@ public class Pressure : PlanetConditionManager
     public FLOAT PressureValue;
     public int suitableMinPressure;
 
-
-
     private void Start()
     {
         PressureValue.Initialize("PressureValue");

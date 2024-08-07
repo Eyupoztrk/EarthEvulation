@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour
         StartCoroutine(WorkContinually());
     }
 
-
     public IEnumerator WorkContinually()
     {
         var isComplete = false;

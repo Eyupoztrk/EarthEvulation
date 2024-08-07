@@ -6,14 +6,12 @@ public class Point
 {
     public float PointAmount { get; private set; }
     public int IncreaseAmount { get; private set; }
-    
 
     public Point(float PointAmount, int IncreaseAmount)
     {
         this.PointAmount = PointAmount;
         this.IncreaseAmount = IncreaseAmount;
     }
-
 
     public void IncreasePointAmount(int amount, ref bool isComplete)
     {
@@ -34,9 +32,7 @@ public class Point
         IncreaseAmount += amount;
         GameManager.instance.increaseAmount.value = IncreaseAmount;
     }
-
-
-
+    
     public string FormatInt(float value)
     {
         return GameManager.instance.stringFormat.FormatInt(value);

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Oxygen : PlanetConditionManager
 {
-
     public FLOAT OxygenValue;
     public int suitableMinOxygen;
 

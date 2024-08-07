@@ -36,7 +36,6 @@ public class GameTask : MonoBehaviour
         inCompleteImage.gameObject.SetActive(false);
     }
 
-
     private void InCompleteTask()
     {
         background.color = Color.red;

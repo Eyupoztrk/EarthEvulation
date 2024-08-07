@@ -7,7 +7,6 @@ using System;
 
 public class BiosPoint : MonoBehaviour
 {
-
     [Header("IN GAME")]
     public Bios bios;
     private Button button;
@@ -135,8 +134,6 @@ public class BiosPoint : MonoBehaviour
             info2Text.text = RequiredBiosLevel.ToString() + " Level '" + RequiredBios.name + "'";
         }
     }
-
-
 
     protected virtual void HandleOnReachPoint()
     {
